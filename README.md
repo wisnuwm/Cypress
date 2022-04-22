@@ -1,9 +1,13 @@
 # Cypress
 ## Running Tests
 
-We have preinstalled all the required environment for running the tests. You can now execute the tests in the console by the following commands: 
-
-#### To run test
+## How to run
+1. install NPM
+2. install cypress
+```bash
+npm install cypress
+```
+3. run cypress
 ```bash
 npx cypress run
 ```
