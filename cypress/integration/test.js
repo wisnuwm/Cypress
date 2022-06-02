@@ -1,9 +1,8 @@
-// /// <reference types ="cypress"/>
+/// <reference types ="cypress"/>
 
-// it('Test Search Google', () => {
-//     cy.visit('https://www.google.com/')
-//     cy.get('.gLFyf').type('wisnu munawar{enter}')
-//     // cy.get('.gLFyf',{timeout: 3000}).type('wisnu munawar{enter}')
-//     cy.get('[data-hveid="CAcQAA"] > .jtfYYd > .jGGQ5e > .yuRUbf > a > .TbwUpd > .iUh30').should('be.visible')
-//     // cy.contains('Wisnu Munawar - Software Quality Assurance Engineer',{timeout:3000}).click()
-// })
+//test case 1 untuk mencari wisnu munawar di google
+it('Test Search Google', () => {
+    cy.visit('https://www.google.com/') //visit ke google
+    cy.get('.gLFyf').type('wisnu munawar{enter}') //typing wisnu munawar dan ENTER
+    cy.contains('Wisnu Munawar - Software Quality Assurance Engineer').should('be.visible') //assert untuk verifikasi
+})
